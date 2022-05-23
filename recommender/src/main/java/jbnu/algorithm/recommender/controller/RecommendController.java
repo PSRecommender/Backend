@@ -21,6 +21,7 @@ public class RecommendController {
     public recommendVO recommend(@RequestBody userVO user) throws Exception {
         return service.recommend(user);
     }
+
     @RequestMapping(value="crawling", method = RequestMethod.GET)
     @ResponseBody
     public Boolean validation( @RequestParam String userId)throws Exception{

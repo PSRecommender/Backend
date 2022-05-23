@@ -1,25 +1,27 @@
 package jbnu.algorithm.recommender.vo;
 
+import java.util.ArrayList;
+
 public class problemVO {
-    private String id;
-    private String tag;
+    private String pId;
+    private ArrayList<tagVO> tags;
     private String level;
     private String url;
 
-    public String getId() {
-        return id;
+    public String getpId() {
+        return pId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setpId(String pId) {
+        this.pId = pId;
     }
 
-    public String getTag() {
-        return tag;
+    public ArrayList<tagVO> getTags() {
+        return tags;
     }
 
-    public void setTag(String tag) {
-        this.tag = tag;
+    public void setTags(ArrayList<tagVO> tags) {
+        this.tags = tags;
     }
 
     public String getLevel() {
